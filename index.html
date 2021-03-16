@@ -50,12 +50,6 @@ body {
 
 		<div id="box"><h1>My name is Alissa. You can learn more about me through this website. Down below, you can browse through my projects, read more about me, see some of the pictures that inspire me as well as find my contacts.</h1></div>
 
-		<hr>
-
-		<button id="moveLeft">Move Left</button>
-		<button id="moveRight">Move Right</button>
-		<button id="moveAround">Move Around</button>
-		<div id="box2"></div>
 	</div>
 
 	<script>
@@ -65,41 +59,6 @@ body {
 			});
 			$('#btnSlideUp').click(function(){
 				$('#box').slideUp(3000);
-			});
-			$('#moveRight').click(function(){
-				$('#box2').animate({
-					left: 500,
-					height: '300px',
-					width:'300px',
-					opacity: '0.5'
-				});
-			});
-
-			$('#moveLeft').click(function(){
-				$('#box2').animate({
-					left: 0,
-					height: '100px',
-					width: '100px',
-					opacity:'1'
-				});
-			});
-
-			$('#moveAround').click(function(){
-				var box = $('#box2');
-				box.animate({
-					left: 300
-				});
-				box.animate({
-					top: 300
-				});
-				box.animate({
-					left:0,
-					top: 300
-				});
-				box.animate({
-					left: 0,
-					top:0
-				});
 			});
 		});
 	</script>
