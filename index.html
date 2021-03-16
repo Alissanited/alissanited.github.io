@@ -26,19 +26,41 @@ body {
 </body>
 </html>
 
-<hr>
-
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<style>
+		#container{
+			width:100%;
+			margin:auto;
+			padding:10px;
+		}
+	</style>
+</head>
+<body>
+	</header>
+	<div id="container">
 		<button id="btnSlideUp">Slide Up</button>
-		<button id="btnSlideDown">Slide Down</button>
-<hr>
- <div id="box"><h2>My name is Alissa. You can learn more about me through this website. Down below, you can browse through my projects, read more about me, see some of the pictures that inspire me as well as find my contacts.</h2></div>
-<script>
-  $('#btnSlideDown').click(function(){
+		<button id="btnSlideDown">SlideDown</button>
+		
+		<hr>
+
+		<div id="box"><h1>My name is Alissa. You can learn more about me through this website. Down below, you can browse through my projects, read more about me, see some of the pictures that inspire me as well as find my contacts.
+    </h1></div>
+
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$('#btnSlideDown').click(function(){
 				$('#box').slideDown(3000);
 			});
-	$('#btnSlideUp').click(function(){
+			$('#btnSlideUp').click(function(){
 				$('#box').slideUp(3000);
-</script>
+			});		
+	</script>
+</body>
+</html>
 
 <html>
 <head>
